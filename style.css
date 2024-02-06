@@ -1,0 +1,106 @@
+/* body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.countdown,
+.stopwatch {
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+#countdown-display,
+#stopwatch-display {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+button {
+    margin: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&display=swap');
+
+body {
+    background: #edeaff;
+    font-family: 'Courier Prime', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.stopwatch {
+    width: 90%;
+    max-width: 600px;
+    background-image: linear-gradient(rgba(0,0,0.8), rgba(0,0,0,0.8)), url(images/background.png);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 40px 0;
+    color: #fff;
+    margin: 50px auto 0;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.8);
+}
+
+.stopwatch h1 {
+    margin-top: 60px;
+    font-size: 64px;
+    font-weight: 300;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons img {
+    width: 50px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.buttons img:nth-child(2) {
+    width: 80px;
+}
+
+@media only screen and (max-width: 768px) {
+    .stopwatch {
+        margin-top: 50px;
+    }
+    
+    .stopwatch h1 {
+        font-size: 48px;
+    }
+    
+    .buttons img {
+        width: 40px;
+    }
+
+    .buttons img:nth-child(2) {
+        width: 60px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .stopwatch h1 {
+        font-size: 36px;
+    }
+}
